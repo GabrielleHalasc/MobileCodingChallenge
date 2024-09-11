@@ -1,6 +1,6 @@
 package com.example.bitcoincodechallenge.presentation
 
-import android.util.Log
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -10,9 +10,7 @@ import androidx.lifecycle.viewmodel.CreationExtras
 import com.example.bitcoincodechallenge.BuildConfig
 import com.example.bitcoincodechallenge.data.InternetResponse
 import com.example.bitcoincodechallenge.data.NodeModel
-import com.example.bitcoincodechallenge.data.NodesApi
 import com.example.bitcoincodechallenge.data.NodesInterface
-import com.example.bitcoincodechallenge.data.RetrofitInstance
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
