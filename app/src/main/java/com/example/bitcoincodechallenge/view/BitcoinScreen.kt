@@ -132,7 +132,6 @@ fun BitcoinScreen(viewModel: NodesViewModel) {
                                 scope.launch {
                                     isRefreshing = true
                                     viewModel.getNodes()
-                                    delay(1000L)
                                     isRefreshing = false
                                 }
                             }

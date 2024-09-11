@@ -51,15 +51,6 @@ fun <T>PullRefreshLazyColumn(
                 onRefresh()
             }
         }
-
-        LaunchedEffect(isRefreshing) {
-            if (isRefreshing) {
-                pullToRefreshState.startRefresh()
-            } else {
-                pullToRefreshState.endRefresh()
-            }
-        }
-
         if (isRefreshing) {
             PullToRefreshContainer(
                 state = pullToRefreshState,
